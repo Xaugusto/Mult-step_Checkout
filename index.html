@@ -11,6 +11,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- CSS -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -54,27 +59,31 @@
                 </div>
             </section>
             <div class="row mt-1">
-                <form action="#" class="border border-2 rounded-1 bg-white p-5 col-8">
+                <form action="#" class="border border-2 rounded-1 bg-white p-5 col-12 col-md-8">
                     <h4 class="fw-medium mt-1">Dados Pessoais</h4>
                     <div class="line-2 border border-1"></div>
-                    <div class="row my-3 mx-1">
-                        <div class="mb-4 position-relative">
+                    <div class="row mt-3">
+                        <div class="mb-4 position-relative col-12">
+                            <input type="text" class="form-control form-control-lg py-3" id="nomeCompleto"
+                                placeholder="">
                             <label for="nomeCompleto" class="bg-white px-1 small position-absolute label-position">Nome
                                 Completo</label>
-                            <input type="text" class="form-control form-control-lg" id="nomeCompleto" placeholder="">
                         </div>
-                        <div class="mb-4 position-relative">
+                        <div class="mb-4 position-relative col-md-6">
+                            <input type="text" class="form-control form-control-lg py-3" id="email" placeholder="">
                             <label for="email"
                                 class="bg-white px-1 small position-absolute label-position">Email</label>
-                            <input type="text" class="form-control form-control-lg" id="email" placeholder="">
                         </div>
-                        <div class="mb-4 position-relative">
+                        <div class="mb-4 position-relative col-md-6">
+                            <input type="number" class="form-control form-control-lg py-3" id="telefone" placeholder="">
                             <label for="telefone"
                                 class="bg-white px-1 small position-absolute label-position">Telefone</label>
-                            <input type="number" class="form-control form-control-lg" id="telefone" placeholder="">
                         </div>
                     </div>
                     <div class="line-2 border border-1"></div>
+                    <div class="d-flex flex-row-reverse mt-4">
+                        <button class="btn btn-primary small fw-semibold px-4 border rounded-1">Próximo</button>
+                    </div>
                 </form>
             </div>
         </div>
