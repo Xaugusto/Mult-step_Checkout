@@ -48,9 +48,22 @@ input:focus~.label-position {
     left: 20px;
     font-size: 0.95rem;
     color: #6c757d;
-    opacity: rgba(33, 37, 41, 0.5);
+    opacity: 0.5;
 }
 
 .form-control:focus {
     box-shadow: none;
+}
+
+.inventory-badge {
+    height: 64px;
+    width: 64px;
+}
+
+.font-px1 {
+    font-size: 15px;
+}
+
+.font-px2 {
+    font-size: 13px;
 }
