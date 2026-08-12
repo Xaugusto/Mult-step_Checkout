@@ -60,6 +60,19 @@ input:focus~.label-position {
     box-shadow: none;
 }
 
+.form-select:focus {
+    box-shadow: none;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+.form-check-input {
+    transform: scale(1.2);
+}
+
+
 .inventory-badge {
     height: 64px;
     width: 64px;
