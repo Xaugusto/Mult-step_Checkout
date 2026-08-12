@@ -82,6 +82,16 @@ input:focus~.label-position {
     max-height: 64px;
 }
 
+.aside-fixa {
+    flex: 0 0 340px;
+}
+
+@media (max-width: 767.98px) {
+    .aside-fixo {
+        flex: 1 1 100%;
+    }
+}
+
 .icon-size {
     font-size: 14px;
 }
