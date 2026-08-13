@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pr-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <title>Checkout Multi Step</title>
     <!-- Material Symbols -->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=lock,inventory_2" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=lock,inventory_2,check,edit" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- CSS -->
@@ -18,7 +18,7 @@
         href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pedido.css">
     <link rel="shortcut icon" href="shopping_cart_24dp_0000F5_FILL1_wght400_GRAD0_opsz24.svg" type="image/x-icon">
 </head>
 
@@ -42,59 +42,81 @@
                     <div class="d-flex flex-column align-items-center ms-3">
                         <div
                             class="stages rounded-4 bg-primary text-white d-flex justify-content-center align-items-center border-primary">
-                            1</div>
+                            <span class="material-symbols-outlined">
+                                check
+                            </span>
+                        </div>
                         <p class="fs-6 text-primary">Pessoal</p>
                     </div>
-                    <div class="line-1 flex-shrink-1 mx-1 border border-1 mt-0"></div>
+                    <div class="line-blue flex-shrink-1 mx-1 bg-primary border border-1 border-primary mt-0"></div>
                     <div class="d-flex flex-column align-items-center">
                         <div
-                            class="stages border border-secondary-subtle rounded-4 bg-surface text-muted d-flex justify-content-center align-items-center">
-                            2</div>
-                        <p class="fs-6">Entrega</p>
+                            class="stages rounded-4 bg-primary text-white d-flex justify-content-center align-items-center border-primary">
+                            <span class="material-symbols-outlined">
+                                check
+                            </span>
+                        </div>
+                        <p class="fs-6 text-primary">Entrega</p>
                     </div>
-                    <div class="line-1 flex-shrink-1 mx-1 border border-1 mt-0"></div>
+                    <div class="line-blue flex-shrink-1 mx-1 bg-primary border border-1 border-primary mt-0"></div>
                     <div class="d-flex flex-column align-items-center me-3">
                         <div
-                            class="stages border border-secondary-subtle rounded-4 bg-surface text-muted d-flex justify-content-center align-items-center">
+                            class="stages rounded-4 bg-primary text-white d-flex justify-content-center align-items-center border-primary">
                             3</div>
-                        <p class="fs-6">Pedido</p>
+                        <p class="fs-6 text-primary">Pedido</p>
                     </div>
                 </div>
             </section>
             <div class="d-flex flex-column gap-4 flex-md-row mt-1 g-4">
                 <div class="flex-grow-1">
-                    <form action="#" class="border border-2 rounded-1 bg-white px-4 py-4 h-100 w-100">
-                        <h4 class="fw-medium mt-1">Dados Pessoais</h4>
-                        <div class="line-2 border border-1"></div>
-                        <div class="row mt-3">
-                            <div class="mb-4 position-relative col-12">
-                                <input type="text" class="form-control form-control-lg py-3" id="nomeCompleto"
-                                    placeholder="">
-                                <label for="nomeCompleto"
-                                    class="bg-white px-1 small position-absolute label-position">Nome
-                                    Completo</label>
+                    <h2 class="fw-bolder mb-2">Revise seu Pedido</h2>
+                    <p class="text-muted">Por favor, verifique se todas as informações estão corretas antes de finalizar
+                    </p>
+                    <section class="border border-2 rounded-1 bg-white mt-4 px-4 py-3">
+                        <p class="fw-medium mb-2">Dados Pessoais</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-body-secondary">
+                                <p class="m-0">João Silva</p>
+                                <p class="m-0">joao.silva@email.com</p>
+                                <p class="m-0">(11) 98765-4321</p>
                             </div>
-                            <div class="mb-4 position-relative col-md-6">
-                                <input type="text" class="form-control form-control-lg py-3" id="email" placeholder="">
-                                <label for="email"
-                                    class="bg-white px-1 small position-absolute label-position">Email</label>
-                            </div>
-                            <div class="mb-4 position-relative col-md-6">
-                                <input type="text" class="form-control form-control-lg py-3" id="telefone"
-                                    placeholder="">
-                                <label for="telefone"
-                                    class="bg-white px-1 small position-absolute label-position">Telefone</label>
+                            <div class="text-primary fw-medium d-flex">
+                                <span class="material-symbols-outlined fs-5 mt-1">
+                                    edit
+                                </span>
+                                <a href="index.html" class="text-decoration-none text-primary">Editar</a>
                             </div>
                         </div>
-                        <div class="line-2 border border-1"></div>
-                        <div class="d-flex flex-row-reverse mt-4">
-                            <a href="entrega.html"
-                                class="btn btn-primary small fw-semibold px-4 border rounded-1">Próximo</a>
+                    </section>
+                    <section class="border border-2 rounded-1 bg-white mt-4 px-4 py-3">
+                        <p class="fw-medium mb-2">Endereço de Entrega</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-body-secondary">
+                                <p class="m-0">Av. Paulista, 1000, Apto 502</p>
+                                <p class="m-0">Bela Vista, São Paulo - SP</p>
+                                <p class="m-0">CEP: 01311-000</p>
+                            </div>
+                            <div class="text-primary fw-medium d-flex">
+                                <span class="material-symbols-outlined fs-5 mt-1">
+                                    edit
+                                </span>
+                                <a href="entrega.html" class="text-decoration-none text-primary">Editar</a>
+                            </div>
                         </div>
-                    </form>
+                    </section>
+                    <div class="d-flex justify-content-between mt-5">
+                        <a href="entrega.html"
+                            class="btn btn-outline-secondary small fw-semibold px-4 border rounded-1  d-flex align-items-center">Voltar</a>
+                        <a href="final.html"
+                            class="btn btn-primary small small fw-semibold py-2 px-4 border rounded-1 d-flex align-items-center">
+                            <span class="material-symbols-outlined fs-5 me-1">
+                                lock
+                            </span>Finalizar
+                            Pedido</a>
+                    </div>
                 </div>
                 <div class="aside-fixo">
-                    <aside class="border border-2 rounded-1 bg-surface px-4 py-4 h-100 w-100">
+                    <aside class="border border-2 rounded-1 bg-surface px-4 py-4 w-100">
                         <h4 class="fw-medium mt-0">Resumo do Pedido</h4>
                         <div class="d-flex mb-4">
                             <div
@@ -147,9 +169,8 @@
             </div>
         </div>
     </footer>
-    <!-- Bootstrap JS -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
-    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
