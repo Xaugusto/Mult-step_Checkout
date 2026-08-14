@@ -2,6 +2,9 @@
 
 > Uma interface moderna, limpa e altamente responsiva para processos de **Checkout em Múltiplas Etapas (Multi-Step)**, desenvolvida para proporcionar a melhor Experiência do Usuário (UX) na conversão de vendas e assinaturas online.
 
+🌐 **Demo Online**: [https://xaugusto.github.io/Mult-step_Checkout/](https://xaugusto.github.io/Mult-step_Checkout/)
+
+[![Demo Online](https://img.shields.io/badge/Demo_Online-Acessar_Projeto-0070f3?style=for-the-badge&logo=github&logoColor=white)](https://xaugusto.github.io/Mult-step_Checkout/)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Bootstrap 5](https://img.shields.io/badge/Bootstrap_5.3.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
@@ -94,6 +97,14 @@ Mult-step Checkout/
 ---
 
 ## 💻 Como Executar o Projeto
+
+Você pode acessar a versão hospedada no GitHub Pages ou rodar o projeto localmente:
+
+🌐 **Acesse a demonstração online:** [https://xaugusto.github.io/Mult-step_Checkout/](https://xaugusto.github.io/Mult-step_Checkout/)
+
+---
+
+### Executando Localmente:
 
 Como o projeto é desenvolvido em **HTML, CSS e JavaScript puros** utilizando Bootstrap via CDN, **não é necessária nenhuma instalação complexa ou servidor Node.js**.
 
