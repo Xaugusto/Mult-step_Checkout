@@ -118,4 +118,4 @@ Este projeto está sob a licença MIT. Sinta-se à vontade para utilizar, modifi
 
 ---
 
-<p align="center">Desenvolvido por <a href="https://github.com/Xaugusto">Augusto Pereira</a></p>
+<p align="center">Desenvolvido por <a href="https://github.com/Xaugusto">Augusto Emanuel Pereira</a></p>
