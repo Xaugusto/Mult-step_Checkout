@@ -30,17 +30,17 @@ O projeto conta com um fluxo intuitivo de 3 etapas principais + tela de confirma
    - Utilização de *Floating Labels* modernas para dinamizar o preenchimento.
    - Stepper visual indicando o avanço no processo.
 
-2. **Etapa 2 - Opções de Entrega (`entrega.html`)**
+2. **Etapa 2 - Opções de Entrega (`src/pages/entrega.html`)**
    - Preenchimento do endereço de entrega completo.
    - Seleção interativa da opção de frete (Padrão ou Expresso).
    - Efeitos visuais dinâmicos em JavaScript para destaque da opção selecionada.
 
-3. **Etapa 3 - Forma de Pagamento (`pedido.html`)**
+3. **Etapa 3 - Forma de Pagamento (`src/pages/pedido.html`)**
    - Opções flexíveis de pagamento (Cartão de Crédito, PIX, Boleto Bancário).
    - Formulário completo para validação dos dados do cartão.
    - Resumo claro de subtotal, taxas e valor total com selo de ambiente seguro.
 
-4. **Etapa 4 - Confirmação do Pedido (`final.html`)**
+4. **Etapa 4 - Confirmação do Pedido (`src/pages/final.html`)**
    - Tela de sucesso informando que a compra foi processada.
    - Exibição de resumo do pedido, endereço de entrega e código de rastreamento fictício.
    - Links úteis e opções de suporte ao cliente.
@@ -60,7 +60,7 @@ O projeto conta com um fluxo intuitivo de 3 etapas principais + tela de confirma
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5 Semântico**: Estrutura acessível e bem padronizada.
-- **CSS3 Personalizado**: Estilizações customizadas para formulários, badges e animações suaves (`style.css`, `entrega.css`, `pedido.css`, `final.css`).
+- **CSS3 Personalizado**: Estilizações customizadas para formulários, badges e animações suaves (`src/styles/style.css`, `src/styles/entrega.css`, `src/styles/pedido.css`, `src/styles/final.css`).
 - **Bootstrap 5.3.3 (via CDN)**: Sistema de Grid dinâmico e utilitários flex.
 - **JavaScript (ES6)**: Manipulação da DOM para interatividade dos seletores de frete e pagamento.
 - **Google Material Symbols & Fonts**: Ícones modernos e tipografia de alta qualidade.
@@ -71,15 +71,24 @@ O projeto conta com um fluxo intuitivo de 3 etapas principais + tela de confirma
 
 ```text
 Mult-step Checkout/
-├── index.html          # Etapa 1: Dados Pessoais
-├── entrega.html        # Etapa 2: Dados de Entrega e Frete
-├── pedido.html         # Etapa 3: Pagamento e Resumo do Pedido
-├── final.html          # Etapa 4: Confirmação e Sucesso
-├── style.css           # Estilos globais e componentes compartilhados
-├── entrega.css         # Estilos específicos da tela de entrega
-├── pedido.css          # Estilos específicos da tela de pagamento
-├── final.css           # Estilos específicos da tela final
-└── README.md           # Documentação do projeto
+├── index.html                  # Etapa 1: Dados Pessoais (Página Principal)
+├── public/
+│   └── assets/
+│       └── icons/              # Ícones SVG e recursos estáticos
+├── src/
+│   ├── pages/
+│   │   ├── entrega.html        # Etapa 2: Dados de Entrega e Frete
+│   │   ├── pedido.html         # Etapa 3: Pagamento e Resumo do Pedido
+│   │   └── final.html          # Etapa 4: Confirmação e Sucesso
+│   └── styles/
+│       ├── style.css           # Estilos globais e componentes compartilhados
+│       ├── entrega.css         # Estilos específicos da tela de entrega
+│       ├── pedido.css          # Estilos específicos da tela de pagamento
+│       └── final.css           # Estilos específicos da tela final
+├── .gitattributes              # Configuração de padronização de quebra de linha (LF)
+├── .gitignore                  # Regras de arquivos ignorados pelo Git
+├── package.json                # Dependências do projeto
+└── README.md                   # Documentação do projeto
 ```
 
 ---
