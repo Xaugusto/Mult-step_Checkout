@@ -45,8 +45,18 @@ body {
 .label-position {
     top: -10px;
     left: 16px;
-    transition: top 0.2s ease, left 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+    transition: top 0.2s ease, left 0.2s ease, font-size 0.2s ease, color 0.2s ease, background-color 0.2 ease;
 }
+
+input:focus~.label-position {
+    top: 1px;
+    left: 20px;
+    font-size: 0.95rem;
+    color: #6c757d;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
 
 .aside-fixo {
     flex: 0 0 360px;
@@ -56,14 +66,6 @@ body {
     .aside-fixo {
         flex: 1 1 100%;
     }
-}
-
-input:focus~.label-position {
-    top: 1px;
-    left: 20px;
-    font-size: 0.95rem;
-    color: #6c757d;
-    opacity: 0.5;
 }
 
 .form-control:focus {
