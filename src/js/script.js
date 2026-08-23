@@ -24,8 +24,9 @@ function valEmail() {
   return true;
 }
 
+$("#telefone").mask("(00) 00000-0000");
+
 function valTelefone() {
-  $("#telefone").mask("(00) 00000-0000");
   if (telefoneInput.value.trim() === "") {
     telefoneInput.setCustomValidity("O telefone é obrigatório!");
     return false;
@@ -34,22 +35,28 @@ function valTelefone() {
   return true;
 }
 
-botao.addEventListener("click", (e) => {
-  e.preventDefault();
-
+function validarDados() {
   if (!valNome()) {
     nomeInput.reportValidity();
+    return;
   }
 
   if (!valEmail()) {
     emailInput.reportValidity();
+    return;
   }
 
   if (!valTelefone()) {
     telefoneInput.reportValidity();
+    return;
   }
 
   if (valNome() && valEmail() && valTelefone()) {
     window.location.href = "src/pages/entrega.html";
   }
+}
+
+botao.addEventListener("click", (e) => {
+  e.preventDefault();
+  validarDados();
 });
