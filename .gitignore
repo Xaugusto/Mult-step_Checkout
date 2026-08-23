@@ -1,7 +1,5 @@
 # Ignora a pasta de dependências do npm
 node_modules
-
 .gutattributes
-
 .prettierrc
 .prettierignore 
