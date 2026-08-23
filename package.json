@@ -1,8 +1,26 @@
 {
   "dependencies": {
     "boostrap": "^2.0.0",
-    "bootstrap": "^5.3.8",
+    "bootstrap": "^5.3.0",
     "jquery": "^4.0.0",
     "jquery-mask-plugin": "^1.14.16"
-  }
+  },
+  "name": "mult-step_checkout",
+  "description": "> Uma interface moderna, limpa e altamente responsiva para processos de **Checkout em Múltiplas Etapas (Multi-Step)**, desenvolvida para proporcionar a melhor Experiência do Usuário (UX) na conversão de vendas e assinaturas online.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xaugusto/Mult-step_Checkout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xaugusto/Mult-step_Checkout/issues"
+  },
+  "homepage": "https://github.com/Xaugusto/Mult-step_Checkout#readme"
 }

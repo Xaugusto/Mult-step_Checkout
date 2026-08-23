@@ -1,177 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pr-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout Multi Step</title>
     <!-- Material Symbols -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check,edit,inventory_2,lock" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check,edit,inventory_2,lock"
+    />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- CSS -->
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="../styles/pedido.css">
-    <link rel="shortcut icon" href="../../public/assets/icons/shopping_cart_24dp_0000F5_FILL1_wght400_GRAD0_opsz24.svg"
-        type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="../styles/pedido.css" />
+    <link
+      rel="shortcut icon"
+      href="../../public/assets/icons/shopping_cart_24dp_0000F5_FILL1_wght400_GRAD0_opsz24.svg"
+      type="image/x-icon"
+    />
+  </head>
 
-<body class="d-flex flex-column min-vh-100">
-    <header class="border-bottom border-2 d-flex justify-content-center bg-white">
-        <div class="div-tam-1">
-            <nav class="py-1 d-flex justify-content-between align-items-center ">
-                <a href="#" class="font-tam1 text-primary text-decoration-none mx-3">
-                    <p class="fw-bold">Checkout</p>
-                </a>
-                <span class="material-symbols-outlined text-primary mx-3">
-                    lock
-                </span>
-            </nav>
-        </div>
+  <body class="d-flex flex-column min-vh-100">
+    <header
+      class="border-bottom border-2 d-flex justify-content-center bg-white"
+    >
+      <div class="div-tam-1">
+        <nav class="py-1 d-flex justify-content-between align-items-center">
+          <a href="#" class="font-tam1 text-primary text-decoration-none mx-3">
+            <p class="fw-bold">Checkout</p>
+          </a>
+          <span class="material-symbols-outlined text-primary mx-3">
+            lock
+          </span>
+        </nav>
+      </div>
     </header>
     <main class="d-flex justify-content-center flex-grow-1 mx-3">
-        <div class="div-tam-1">
-            <section class=" mt-5 d-flex justify-content-center">
-                <div class="div-tam-2 d-flex justify-content-between">
-                    <div class="d-flex flex-column align-items-center ms-3">
-                        <div
-                            class="stages rounded-4 bg-primary text-white d-flex justify-content-center align-items-center border-primary">
-                            <span class="material-symbols-outlined">
-                                check
-                            </span>
-                        </div>
-                        <p class="fs-6 text-primary">Pessoal</p>
-                    </div>
-                    <div class="line-blue flex-shrink-1 mx-1 bg-primary border border-1 border-primary mt-0"></div>
-                    <div class="d-flex flex-column align-items-center">
-                        <div
-                            class="stages rounded-4 bg-primary text-white d-flex justify-content-center align-items-center border-primary">
-                            <span class="material-symbols-outlined">
-                                check
-                            </span>
-                        </div>
-                        <p class="fs-6 text-primary">Entrega</p>
-                    </div>
-                    <div class="line-blue flex-shrink-1 mx-1 bg-primary border border-1 border-primary mt-0"></div>
-                    <div class="d-flex flex-column align-items-center me-3">
-                        <div
-                            class="stages rounded-4 bg-primary text-white d-flex justify-content-center align-items-center border-primary">
-                            3</div>
-                        <p class="fs-6 text-primary">Pedido</p>
-                    </div>
+      <div class="div-tam-1">
+        <section class="mt-5 d-flex justify-content-center">
+          <div class="div-tam-2 d-flex justify-content-between">
+            <div class="d-flex flex-column align-items-center ms-3">
+              <div
+                class="stages rounded-4 bg-primary text-white d-flex justify-content-center align-items-center border-primary"
+              >
+                <span class="material-symbols-outlined"> check </span>
+              </div>
+              <p class="fs-6 text-primary">Pessoal</p>
+            </div>
+            <div
+              class="line-blue flex-shrink-1 mx-1 bg-primary border border-1 border-primary mt-0"
+            ></div>
+            <div class="d-flex flex-column align-items-center">
+              <div
+                class="stages rounded-4 bg-primary text-white d-flex justify-content-center align-items-center border-primary"
+              >
+                <span class="material-symbols-outlined"> check </span>
+              </div>
+              <p class="fs-6 text-primary">Entrega</p>
+            </div>
+            <div
+              class="line-blue flex-shrink-1 mx-1 bg-primary border border-1 border-primary mt-0"
+            ></div>
+            <div class="d-flex flex-column align-items-center me-3">
+              <div
+                class="stages rounded-4 bg-primary text-white d-flex justify-content-center align-items-center border-primary"
+              >
+                3
+              </div>
+              <p class="fs-6 text-primary">Pedido</p>
+            </div>
+          </div>
+        </section>
+        <div class="d-flex flex-column gap-4 flex-md-row mt-1 g-4">
+          <div class="flex-grow-1">
+            <h2 class="fw-bolder mb-2">Revise seu Pedido</h2>
+            <p class="text-muted">
+              Por favor, verifique se todas as informações estão corretas antes
+              de finalizar
+            </p>
+            <section class="border border-2 rounded-1 bg-white mt-4 px-4 py-3">
+              <p class="fw-medium mb-2">Dados Pessoais</p>
+              <div class="d-flex justify-content-between">
+                <div class="text-body-secondary">
+                  <p class="m-0">João Silva</p>
+                  <p class="m-0">joao.silva@email.com</p>
+                  <p class="m-0">(11) 98765-4321</p>
                 </div>
+                <div class="text-primary fw-medium d-flex">
+                  <span class="material-symbols-outlined fs-5 mt-1">
+                    edit
+                  </span>
+                  <a href="index.html" class="text-decoration-none text-primary"
+                    >Editar</a
+                  >
+                </div>
+              </div>
             </section>
-            <div class="d-flex flex-column gap-4 flex-md-row mt-1 g-4">
-                <div class="flex-grow-1">
-                    <h2 class="fw-bolder mb-2">Revise seu Pedido</h2>
-                    <p class="text-muted">Por favor, verifique se todas as informações estão corretas antes de finalizar
-                    </p>
-                    <section class="border border-2 rounded-1 bg-white mt-4 px-4 py-3">
-                        <p class="fw-medium mb-2">Dados Pessoais</p>
-                        <div class="d-flex justify-content-between">
-                            <div class="text-body-secondary">
-                                <p class="m-0">João Silva</p>
-                                <p class="m-0">joao.silva@email.com</p>
-                                <p class="m-0">(11) 98765-4321</p>
-                            </div>
-                            <div class="text-primary fw-medium d-flex">
-                                <span class="material-symbols-outlined fs-5 mt-1">
-                                    edit
-                                </span>
-                                <a href="index.html" class="text-decoration-none text-primary">Editar</a>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="border border-2 rounded-1 bg-white mt-4 px-4 py-3">
-                        <p class="fw-medium mb-2">Endereço de Entrega</p>
-                        <div class="d-flex justify-content-between">
-                            <div class="text-body-secondary">
-                                <p class="m-0">Av. Paulista, 1000, Apto 502</p>
-                                <p class="m-0">Bela Vista, São Paulo - SP</p>
-                                <p class="m-0">CEP: 01311-000</p>
-                            </div>
-                            <div class="text-primary fw-medium d-flex">
-                                <span class="material-symbols-outlined fs-5 mt-1">
-                                    edit
-                                </span>
-                                <a href="entrega.html" class="text-decoration-none text-primary">Editar</a>
-                            </div>
-                        </div>
-                    </section>
-                    <div class="d-flex justify-content-between mt-5">
-                        <a href="entrega.html"
-                            class="btn btn-outline-secondary small fw-semibold px-4 border rounded-1  d-flex align-items-center">Voltar</a>
-                        <a href="final.html"
-                            class="btn btn-primary small small fw-semibold py-2 px-4 border rounded-1 d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-5 me-1">
-                                lock
-                            </span>Finalizar
-                            Pedido</a>
-                    </div>
+            <section class="border border-2 rounded-1 bg-white mt-4 px-4 py-3">
+              <p class="fw-medium mb-2">Endereço de Entrega</p>
+              <div class="d-flex justify-content-between">
+                <div class="text-body-secondary">
+                  <p class="m-0">Av. Paulista, 1000, Apto 502</p>
+                  <p class="m-0">Bela Vista, São Paulo - SP</p>
+                  <p class="m-0">CEP: 01311-000</p>
                 </div>
-                <div class="aside-fixo">
-                    <aside class="border border-2 rounded-1 bg-surface px-4 py-4 w-100">
-                        <h4 class="fw-medium mt-0">Resumo do Pedido</h4>
-                        <div class="d-flex mb-4">
-                            <div
-                                class="inventory-badge border border-secondary-subtle bg-white d-flex align-items-center justify-content-center">
-                                <span class="material-symbols-outlined text-secondary">
-                                    inventory_2
-                                </span>
-                            </div>
-                            <div class="ms-3 d-flex flex-column gap-0 justify-content-center">
-                                <p class="font-px1 fw-medium mb-0">Plano Profissional</p>
-                                <p class="font-px2 text-nowrap mb-0">Assinatura Anual</p>
-                            </div>
-                            <div class="ms-4 fw-medium d-flex align-items-center">R$ 599,99</div>
-                        </div>
-                        <div class="line-2 border border-1"></div>
-                        <div class="mt-3 mb-2 d-flex justify-content-between">
-                            <div class="">Subtotal</div>
-                            <div class="">R$ 599,99</div>
-                        </div>
-                        <div class="mb-3 d-flex justify-content-between">
-                            <div class="">Taxas</div>
-                            <div class="">R$ 0,00</div>
-                        </div>
-                        <div class="line-2 border border-1"></div>
-                        <div class="mt-3 mb-4 d-flex justify-content-between">
-                            <h4 class="fw-medium mt-0">Total</h4>
-                            <h4 class="fw-medium mt-0">R$ 599,99</h4>
-                        </div>
-                        <div class="line-2 border border-1"></div>
-                        <div class="d-flex align-items-center justify-content-center">
-                            <span class="material-symbols-outlined icon-size">
-                                lock
-                            </span>
-                            <p class="mt-3 ms-1 font-px3">Ambiente 100% Seguro</p>
-                        </div>
-                    </aside>
+                <div class="text-primary fw-medium d-flex">
+                  <span class="material-symbols-outlined fs-5 mt-1">
+                    edit
+                  </span>
+                  <a
+                    href="entrega.html"
+                    class="text-decoration-none text-primary"
+                    >Editar</a
+                  >
                 </div>
+              </div>
+            </section>
+            <div class="d-flex justify-content-between mt-5">
+              <a
+                href="entrega.html"
+                class="btn btn-outline-secondary small fw-semibold px-4 border rounded-1 d-flex align-items-center"
+                >Voltar</a
+              >
+              <a
+                href="final.html"
+                class="btn btn-primary small small fw-semibold py-2 px-4 border rounded-1 d-flex align-items-center"
+              >
+                <span class="material-symbols-outlined fs-5 me-1"> lock </span
+                >Finalizar Pedido</a
+              >
             </div>
+          </div>
+          <div class="aside-fixo">
+            <aside class="border border-2 rounded-1 bg-surface px-4 py-4 w-100">
+              <h4 class="fw-medium mt-0">Resumo do Pedido</h4>
+              <div class="d-flex mb-4">
+                <div
+                  class="inventory-badge border border-secondary-subtle bg-white d-flex align-items-center justify-content-center"
+                >
+                  <span class="material-symbols-outlined text-secondary">
+                    inventory_2
+                  </span>
+                </div>
+                <div
+                  class="ms-3 d-flex flex-column gap-0 justify-content-center"
+                >
+                  <p class="font-px1 fw-medium mb-0">Plano Profissional</p>
+                  <p class="font-px2 text-nowrap mb-0">Assinatura Anual</p>
+                </div>
+                <div class="ms-4 fw-medium d-flex align-items-center">
+                  R$ 599,99
+                </div>
+              </div>
+              <div class="line-2 border border-1"></div>
+              <div class="mt-3 mb-2 d-flex justify-content-between">
+                <div class="">Subtotal</div>
+                <div class="">R$ 599,99</div>
+              </div>
+              <div class="mb-3 d-flex justify-content-between">
+                <div class="">Taxas</div>
+                <div class="">R$ 0,00</div>
+              </div>
+              <div class="line-2 border border-1"></div>
+              <div class="mt-3 mb-4 d-flex justify-content-between">
+                <h4 class="fw-medium mt-0">Total</h4>
+                <h4 class="fw-medium mt-0">R$ 599,99</h4>
+              </div>
+              <div class="line-2 border border-1"></div>
+              <div class="d-flex align-items-center justify-content-center">
+                <span class="material-symbols-outlined icon-size"> lock </span>
+                <p class="mt-3 ms-1 font-px3">Ambiente 100% Seguro</p>
+              </div>
+            </aside>
+          </div>
         </div>
+      </div>
     </main>
-    <footer class="d-flex justify-content-center border-top border-2 p-5 mt-5 bg-white">
-        <div class="div-tam-1 row">
-            <div class="d-flex col-12 col-md-6 justify-content-center justify-content-md-start">
-                <p class="fw-semibold text-nowrap">© 2026 Checkout Seguro. Todos os direitos reservados.</p>
-            </div>
-            <div class="d-flex gap-4 font-px2 col-12 col-md-6 justify-content-center justify-content-md-end">
-                <a>Privacidade</a>
-                <a>Termos</a>
-                <a>Ajuda</a>
-            </div>
+    <footer
+      class="d-flex justify-content-center border-top border-2 p-5 mt-5 bg-white"
+    >
+      <div class="div-tam-1 row">
+        <div
+          class="d-flex col-12 col-md-6 justify-content-center justify-content-md-start"
+        >
+          <p class="fw-semibold text-nowrap">
+            © 2026 Checkout Seguro. Todos os direitos reservados.
+          </p>
         </div>
+        <div
+          class="d-flex gap-4 font-px2 col-12 col-md-6 justify-content-center justify-content-md-end"
+        >
+          <a>Privacidade</a>
+          <a>Termos</a>
+          <a>Ajuda</a>
+        </div>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+  </body>
 </html>

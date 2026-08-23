@@ -30,7 +30,7 @@ O projeto conta com um fluxo intuitivo de 3 etapas principais + tela de confirma
 
 1. **Etapa 1 - Dados Pessoais (`index.html`)**
    - Coleta de dados fundamentais do cliente (Nome Completo, E-mail e Telefone).
-   - Utilização de *Floating Labels* modernas para dinamizar o preenchimento.
+   - Utilização de _Floating Labels_ modernas para dinamizar o preenchimento.
    - Stepper visual indicando o avanço no processo.
 
 2. **Etapa 2 - Opções de Entrega (`src/pages/entrega.html`)**
@@ -109,11 +109,13 @@ Você pode acessar a versão hospedada no GitHub Pages ou rodar o projeto localm
 Como o projeto é desenvolvido em **HTML, CSS e JavaScript puros** utilizando Bootstrap via CDN, **não é necessária nenhuma instalação complexa ou servidor Node.js**.
 
 1. **Clone o repositório:**
+
    ```bash
    git clone https://github.com/Xaugusto/Mult-step_Checkout.git
    ```
 
 2. **Navegue até a pasta do projeto:**
+
    ```bash
    cd Mult-step_Checkout
    ```
