@@ -3,6 +3,33 @@ const emailInput = document.getElementById("email");
 const telefoneInput = document.getElementById("telefone");
 const botao = document.getElementById("formButton");
 
+const editando = sessionStorage.getItem("dadosPessoaisEdit");
+
+function inserirDados() {
+  const dadosPessoaisSalvos = JSON.parse(
+    sessionStorage.getItem("dadosPessoais"),
+  );
+  if (editando) {
+    nomeInput.value = dadosPessoaisSalvos.nome;
+    emailInput.value = dadosPessoaisSalvos.email;
+    telefoneInput.value = dadosPessoaisSalvos.telefone;
+  }
+}
+
+function guardarDados() {
+  const dadosPessoais = {
+    nome: nomeInput.value,
+    email: emailInput.value,
+    telefone: telefoneInput.value,
+  };
+
+  sessionStorage.setItem("dadosPessoais", JSON.stringify(dadosPessoais));
+}
+
+function removeEditSession() {
+  sessionStorage.removeItem("dadosPessoaisEdit");
+}
+
 function valNome() {
   if (nomeInput.value.trim() === "") {
     nomeInput.setCustomValidity("O nome é obrigatório!");
@@ -52,7 +79,14 @@ function validarDados() {
   }
 
   if (valNome() && valEmail() && valTelefone()) {
-    window.location.href = "src/pages/entrega.html";
+    if (editando) {
+      removeEditSession();
+      guardarDados();
+      window.location.href = "src/pages/pedido.html";
+    } else {
+      guardarDados();
+      window.location.href = "src/pages/entrega.html";
+    }
   }
 }
 
@@ -60,3 +94,5 @@ botao.addEventListener("click", (e) => {
   e.preventDefault();
   validarDados();
 });
+
+inserirDados();
