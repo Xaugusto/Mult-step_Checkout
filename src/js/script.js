@@ -43,9 +43,6 @@ function valEmail() {
   if (emailInput.value.trim() === "") {
     emailInput.setCustomValidity("O email é obrigatório!");
     return false;
-  } else if (!emailInput.validity.valid) {
-    emailInput.setCustomValidity("Digite um email válido!");
-    return false;
   }
   emailInput.setCustomValidity("");
   return true;
@@ -90,9 +87,17 @@ function validarDados() {
   }
 }
 
-botao.addEventListener("click", (e) => {
+document.forms[0].addEventListener("submit", (e) => {
   e.preventDefault();
   validarDados();
+});
+
+emailInput.addEventListener("invalid", function (e) {
+  if (emailInput.validity.typeMismatch) {
+    emailInput.setCustomValidity("Digite um email válido!");
+  } else {
+    emailInput.setCustomValidity("");
+  }
 });
 
 inserirDados();
