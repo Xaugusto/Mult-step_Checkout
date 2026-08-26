@@ -30,52 +30,50 @@ function removeEditSession() {
   sessionStorage.removeItem("dadosPessoaisEdit");
 }
 
-function valNome() {
+function validaCampos() {
+  [nomeInput, emailInput, telefoneInput].forEach((input) => {
+    input.addEventListener("input", () => {
+      input.setCustomValidity("");
+    });
+  });
+
   if (nomeInput.value.trim() === "") {
     nomeInput.setCustomValidity("O nome é obrigatório!");
     return false;
   }
-  nomeInput.setCustomValidity("");
-  return true;
-}
 
-function valEmail() {
   if (emailInput.value.trim() === "") {
     emailInput.setCustomValidity("O email é obrigatório!");
     return false;
   }
-  emailInput.setCustomValidity("");
-  return true;
-}
 
-$("#telefone").mask("(00) 00000-0000");
-
-function valTelefone() {
   if (telefoneInput.value.trim() === "") {
     telefoneInput.setCustomValidity("O telefone é obrigatório!");
     return false;
   }
-  telefoneInput.setCustomValidity("");
+
+  if (!document.forms[0].checkValidity()) {
+    document.forms[0].reportValidity();
+    return false;
+  }
+
   return true;
 }
 
+emailInput.addEventListener("input", function () {
+  emailInput.setCustomValidity("");
+});
+
+emailInput.addEventListener("invalid", function (e) {
+  if (emailInput.validity.typeMismatch) {
+    emailInput.setCustomValidity("Digite um email válido!");
+  } else {
+    emailInput.setCustomValidity("");
+  }
+});
+
 function validarDados() {
-  if (!valNome()) {
-    nomeInput.reportValidity();
-    return;
-  }
-
-  if (!valEmail()) {
-    emailInput.reportValidity();
-    return;
-  }
-
-  if (!valTelefone()) {
-    telefoneInput.reportValidity();
-    return;
-  }
-
-  if (valNome() && valEmail() && valTelefone()) {
+  if (validaCampos()) {
     if (editando) {
       removeEditSession();
       guardarDados();
@@ -92,12 +90,5 @@ document.forms[0].addEventListener("submit", (e) => {
   validarDados();
 });
 
-emailInput.addEventListener("invalid", function (e) {
-  if (emailInput.validity.typeMismatch) {
-    emailInput.setCustomValidity("Digite um email válido!");
-  } else {
-    emailInput.setCustomValidity("");
-  }
-});
-
+$("#telefone").mask("(00) 00000-0000");
 inserirDados();
