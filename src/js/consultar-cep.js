@@ -9,7 +9,6 @@ const estadoInput2 = document.getElementById("estado");
 const botaoConsulta = document.getElementById("calcCep");
 
 async function calcularCEP() {
-  cepInput2.value = "85067-050";
   const url = `https://viacep.com.br/ws/${cepInput2.value.replaceAll("-", "")}/json/`;
 
   const resp = await fetch(url);
